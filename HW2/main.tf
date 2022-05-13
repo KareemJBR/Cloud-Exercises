@@ -2,6 +2,22 @@ locals {
   infra_env = terraform.workspace == "default" ? "Dev" : terraform.workspace
 }
 
+module "wepServer-dev" {
+  source = "modules/DevModule"
+  project_id = "peppy-oven-344513"
+  labels = {
+    "environment" = "Dev"
+  }
+}
+
+module "wepServer-prod" {
+  source = "modules/ProdModule"
+  project_id = "peppy-oven-344513"
+  labels = {
+    "environment" = "Production"
+  }
+}
+
 resource "google_compute_instance_template" "flask-server-template" {
   name = "flask-app-template"
   description = "This template is used for creating compute instances to run flask web app."
@@ -13,8 +29,12 @@ resource "google_compute_instance_template" "flask-server-template" {
   machine_type = "c2-standard-4"  // 4 vCPU and 16 GB memory (compute optimized machine)
   can_ip_forward = false
 
+  container {
+    source_image = "https://us.gcr.io/gcr/images/peppy-oven-344513/global/flask-app?project=peppy-oven-344513:latest"
+  }
+
   disk {
-    source_image      = "flask-app-image"
+    source_image      = "debian-cloud/debian-9"
     auto_delete       = true
     boot              = true
   }

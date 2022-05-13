@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="891b386a-d47b-453d-96e3-f00d4efedc5a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/DevModule/main.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/DevModule/output.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/DevModule/variables.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ProdModule/main.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ProdModule/output.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ProdModule/variables.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.terraform/environment" beforeDir="false" afterPath="$PROJECT_DIR$/.terraform/environment" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/main.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +42,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="28KrIEb991OwWYKJqwDkJbB4Ulf" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -44,8 +53,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/modules/ProdModule" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Karee\Documents\Cloud-Exercises\HW2\modules\ProdModule" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.__init__">
     <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -155,7 +169,10 @@
       <workItem from="1651704038428" duration="2868000" />
       <workItem from="1651881930005" duration="9000" />
       <workItem from="1651881963612" duration="736000" />
-      <workItem from="1652109066798" duration="5657000" />
+      <workItem from="1652109066798" duration="5992000" />
+      <workItem from="1652379561662" duration="2329000" />
+      <workItem from="1652397999163" duration="4134000" />
+      <workItem from="1652424740200" duration="2993000" />
     </task>
     <servers />
   </component>
