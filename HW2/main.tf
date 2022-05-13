@@ -3,19 +3,11 @@ locals {
 }
 
 module "wepServer-dev" {
-  source = "modules/DevModule"
-  project_id = "peppy-oven-344513"
-  labels = {
-    "environment" = "Dev"
-  }
+  source = "./modules/DevModule"
 }
 
 module "wepServer-prod" {
-  source = "modules/ProdModule"
-  project_id = "peppy-oven-344513"
-  labels = {
-    "environment" = "Production"
-  }
+  source = "./modules/ProdModule"
 }
 
 resource "google_compute_instance_template" "flask-server-template" {
@@ -28,10 +20,6 @@ resource "google_compute_instance_template" "flask-server-template" {
 
   machine_type = "c2-standard-4"  // 4 vCPU and 16 GB memory (compute optimized machine)
   can_ip_forward = false
-
-  container {
-    source_image = "https://us.gcr.io/gcr/images/peppy-oven-344513/global/flask-app?project=peppy-oven-344513:latest"
-  }
 
   disk {
     source_image      = "debian-cloud/debian-9"
@@ -54,10 +42,6 @@ resource "google_compute_instance_group_manager" "appserver" {
 
   version {
     instance_template = google_compute_instance_template.flask-server-template.id
-
-    target_size {
-      fixed = 1   // at least one VM is running in the group
-    }
-
   }
+
 }

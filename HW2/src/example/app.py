@@ -1,3 +1,5 @@
+import time
+import redis
 import json
 
 from flask import request
@@ -26,10 +28,9 @@ def fetch():
 
 @app.route('/add', methods=['POST'])
 def add():
-    data = request.get_json()
-    name = data['name']
-    price = data['price']
-    breed = data['breed']
+    name = 'lol'    # here are my changes to the container
+    price = 'lol'
+    breed = 'lol'
 
     database.add_instance(Cats, name=name, price=price, breed=breed)
     return json.dumps("Added"), 200

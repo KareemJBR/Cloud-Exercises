@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="891b386a-d47b-453d-96e3-f00d4efedc5a" name="Changes" comment="" />
+    <list default="true" id="891b386a-d47b-453d-96e3-f00d4efedc5a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.terraform/environment" beforeDir="false" afterPath="$PROJECT_DIR$/.terraform/environment" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/DevModule/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/DevModule/main.tfvars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/DevModule/output.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ProdModule/main.tfvars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/DevModule/variables.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ProdModule/main.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ProdModule/output.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ProdModule/variables.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider.tf" beforeDir="false" afterPath="$PROJECT_DIR$/provider.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/example/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/example/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/terraform.tfstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform.tfstate.backup" beforeDir="false" afterPath="$PROJECT_DIR$/terraform.tfstate.backup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform.tfstate.d/Dev/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/terraform.tfstate.d/Dev/terraform.tfstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform.tfstate.d/Production/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/terraform.tfstate.d/Production/terraform.tfstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terraform.tfstate.d/Production/terraform.tfstate.backup" beforeDir="false" afterPath="$PROJECT_DIR$/terraform.tfstate.d/Production/terraform.tfstate.backup" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +45,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -40,6 +65,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -164,6 +190,7 @@
       <workItem from="1652397999163" duration="4134000" />
       <workItem from="1652424740200" duration="2993000" />
       <workItem from="1652431138764" duration="79000" />
+      <workItem from="1652463657098" duration="4561000" />
     </task>
     <servers />
   </component>
