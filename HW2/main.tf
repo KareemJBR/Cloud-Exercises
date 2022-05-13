@@ -40,8 +40,9 @@ resource "google_compute_instance_group_manager" "appserver" {
   base_instance_name = "appserver"
   zone = "us-central1-a"
 
+  target_size  = 1    # at least 1 VM instance
+
   version {
     instance_template = google_compute_instance_template.flask-server-template.id
   }
-
 }

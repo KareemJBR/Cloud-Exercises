@@ -1,1 +1,1 @@
-{"Modules":[{"Key":"wepServer-dev","Source":"./modules/DevModule","Dir":"modules/DevModule"},{"Key":"wepServer-prod","Source":"./modules/ProdModule","Dir":"modules/ProdModule"},{"Key":"","Source":"","Dir":"."}]}
+{"Modules":[{"Key":"wepServer-prod","Source":"./modules/ProdModule","Dir":"modules/ProdModule"},{"Key":"","Source":"","Dir":"."},{"Key":"wepServer-dev","Source":"./modules/DevModule","Dir":"modules/DevModule"}]}
