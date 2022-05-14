@@ -10,6 +10,16 @@ module "wepServer-prod" {
   source = "./modules/ProdModule"
 }
 
+resource "google_sql_database_instance" "my-database" {
+  name             = "my-database-instance"
+  region           = "us-central1"
+  database_version = "MYSQL_5_7"
+  settings {
+    tier = "db-f1-micro"
+  }
+}
+
+
 resource "google_compute_instance_template" "flask-server-template" {
   name = "flask-app-template"
   description = "This template is used for creating compute instances to run flask web app."
